@@ -19,6 +19,7 @@ public class Config {
     public Cloud cloudFactory() {
 
     	try {
+    	    System.out.println("Creating instance of Cloud");
     		return new CloudFactory().getCloud();
     	} catch ( CloudException ce ) {
     		//	Not running in cloud environment, return null
