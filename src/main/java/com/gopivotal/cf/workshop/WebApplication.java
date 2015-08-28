@@ -12,7 +12,7 @@ public class WebApplication extends SpringBootServletInitializer {
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		
-		System.out.println("The class name is "+applicaiton);
+		System.out.println("The class name is "+application);
 		return application.sources(Config.class);
 	}
 
